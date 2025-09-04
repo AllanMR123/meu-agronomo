@@ -1,0 +1,6 @@
+@import 'style.css'; /* Importa o seu arquivo de estilos principal */
+
+/* Se você for usar TailwindCSS no futuro, os imports dele viriam aqui */
+
+/* Exemplo de importação de fontes globais, se necessário */
+/* --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */

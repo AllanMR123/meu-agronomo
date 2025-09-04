@@ -1,0 +1,276 @@
+/* ========================================= */
+/* ESTILOS GERAIS E DE LOGIN/CADASTRO        */
+/* ========================================= */
+
+/* RESET */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b4228;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CONTAINERS DE LOGIN E CADASTRO */
+.container-login,
+.container-cadastro {
+    background: #2ecc71;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.container-cadastro h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* LOGO */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #1b4228;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.logo h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+/* FORMULÁRIOS */
+.container-login label,
+.container-cadastro label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.container-login input,
+.container-cadastro input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+/* BOTÕES */
+.container-cadastro button,
+.container-login button {
+    width: 100%;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease;
+}
+
+.container-login button:hover,
+.container-cadastro button:hover {
+    background: #333;
+}
+
+/* LINKS */
+.container-login a:not(.btn-p-acesso) {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #0044cc;
+    text-decoration: none;
+}
+
+.container-login a:not(.btn-p-acesso):hover {
+    text-decoration: underline;
+}
+
+/* BOTÃO PRIMEIRO ACESSO */
+.container-login .btn-p-acesso {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 14px;
+    background: #0044cc;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.container-login a.btn-p-acesso:hover {
+    background: #003399;
+    color: #ffffff;
+}
+
+/* ========================================= */
+/* ESTILOS DO DASHBOARD                      */
+/* ========================================= */
+
+/* Reseta o body para o dashboard para não centralizar tudo */
+body.dashboard-body {
+    display: block;
+    height: auto;
+    background-color: #f4f7f6;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* BARRA LATERAL */
+.barra-lateral {
+    width: 250px;
+    background-color: #1b4228;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-lateral .logo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.barra-lateral .logo img {
+    width: 150px;
+}
+
+.barra-lateral nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.barra-lateral nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 10px;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+}
+
+.barra-lateral nav ul li a:hover {
+    background-color: #2ecc71;
+}
+
+.barra-lateral .submenu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo-principal {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.topo .search input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.topo .search button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.topo .logout {
+    text-decoration: none;
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* SEÇÕES */
+.conteudo-principal section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-principal h2, .conteudo-principal h3 {
+    color: #333;
+}
+
+/* ATALHOS */
+.quadro-atalhos {
+    display: flex;
+    gap: 15px;
+}
+
+.atalho {
+    background-color: #e9f5ee;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #1b4228;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.atalho:hover {
+    background-color: #d4eade;
+}
+
+/* INDICADORES */
+.indicadores-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.indicador {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2ecc71;
+}
+
+.indicador strong {
+    font-size: 24px;
+    display: block;
+    margin-top: 10px;
+}
