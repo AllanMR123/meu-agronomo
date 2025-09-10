@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController; // Importa o HomeController
+use App\Http\Controllers\ClienteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +46,6 @@ Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 Route::get('/home', function () {
     return redirect()->route('dashboard');
 })->middleware('auth');
+
+
+Route::resource('clientes', ClienteController::class);
